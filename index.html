@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Password Generator</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Password Generator</h1>
+    <h3 class="password-display" id="passwordDisplay">🔥password🔥</h3>
+    <form id="passwordGeneratorForm" class="form">
+      <label for="characterAmountNumber">Number Of Characters</label>
+      <div class="character-amount-container">
+        <input type="range" min="1" max="50" value="8" id="characterAmountRange">
+        <input class="number-input" type="number" min="1" max="50" value="8" id="characterAmountNumber">
+      </div>
+
+      <label class="custom-checkbox" for="includeUppercase">
+        Include Uppercase
+        <input type="checkbox" id="includeUppercase">
+        <span class="checkmark"></span>
+      </label>
+      
+      <label class="custom-checkbox" for="includeNumbers">
+        Include Numbers
+        <input type="checkbox" id="includeNumbers">
+        <span class="checkmark"></span>
+      </label>
+      
+      <label class="custom-checkbox" for="includeSymbols">
+        Include Symbols
+        <input type="checkbox" id="includeSymbols">
+        <span class="checkmark"></span>
+      </label>
+      
+
+      <button type="submit" class="btn">Generate Password</button>
+    </form>
+  </div>
+  <footer>
+    <span>Made by Justcuz3</span>
+  </footer>
+</body>
+</html>
